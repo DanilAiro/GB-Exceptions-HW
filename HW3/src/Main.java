@@ -56,12 +56,14 @@ public class Main {
                     fw.write(h.toString());
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
+                    e.printStackTrace();
                 }
             } else {
                 try (FileWriter fw = new FileWriter(file)) {
                     fw.write(h.toString());
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
+                    e.printStackTrace();
                 }
             }
 
