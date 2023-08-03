@@ -40,7 +40,6 @@ public class Main {
             h = getHuman(humanInfo);
             File file = new File(h.getFamilyName() + ".txt");
 
-
             if (file.exists()) {
                 Scanner scanner = new Scanner(file);
                 String text = "";
@@ -73,6 +72,7 @@ public class Main {
             System.out.println("Дата должна состоять из чисел");
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 
